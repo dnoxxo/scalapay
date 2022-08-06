@@ -23,14 +23,14 @@ $FAIL_URL = '';
 
 $SPESE_SPEDIZIONE = 0;
 
-//CLIENTE
+/* DATI CLIENTE */
 $TELEFONO = "";
 $NOME = "";
 $COGNOME = "";
 $MAIL = "";
 
 
-//SPEDIZIONE
+/* DATI SPEDIZIONE */
 $CAP = "";
 $CITY =  "";
 $VIA =  "";
@@ -58,7 +58,7 @@ $RESPONSE = $Scalapay->CreateOrder();
 $ORDER_TOKEN = $RESPONSE->token;
 $ORDER_CHECKOUT = $RESPONSE->checkoutUrl;
 
-//Azione qui per impostare il token sull'ordine
+/* Azione qui per impostare il token sull'ordine */
 
 header('Location: '.$ORDER_CHECKOUT);
 	
@@ -76,7 +76,7 @@ header('Location: '.$ORDER_CHECKOUT);
 		
 		if($CHECK->status == 'charged'){
 			
-			//azione qui per impostare lo stato d'ordine in base al token 
+			/*  azione qui per impostare lo stato d'ordine in base al token */ 
 			header('Location: '.$Scalapay->success);
 			
 		} 
