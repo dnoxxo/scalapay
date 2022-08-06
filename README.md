@@ -8,10 +8,10 @@ Semplice classe php per gestire i pagamenti con scalapay
 esempio creare un file chiamato scalapay.php e chiamarlo semplicemente tramite url con parametro dell'ordine 
 per prendere info esempio 
 
-<a href="scalapay.php?order=1234"> PAGA CON SCALAPAY </a>
+scalapay.php?order=1234
 
 <CODE>
-<?php
+
 
 require_once 'scalapay_class.inc.php';
 
@@ -98,5 +98,5 @@ header('Location: '.$ORDER_CHECKOUT);
 
 
 }
-?>
+
 </CODE>
