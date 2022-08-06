@@ -9,7 +9,7 @@ esempio creare un file chiamato scalapay.php e chiamarlo semplicemente tramite u
 per prendere info esempio 
 
 scalapay.php?order=1234
-
+<PRE>
 <CODE>
 
 
@@ -100,3 +100,4 @@ header('Location: '.$ORDER_CHECKOUT);
 }
 
 </CODE>
+</PRE>
