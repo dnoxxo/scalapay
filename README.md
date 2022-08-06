@@ -9,6 +9,8 @@ esempio creare un file chiamato scalapay.php e chiamarlo semplicemente tramite u
 per prendere info esempio 
 
 <a href="scalapay.php?order=1234"> PAGA CON SCALAPAY </a>
+
+<CODE>
 <?php
 
 require_once 'scalapay_class.inc.php';
@@ -97,3 +99,4 @@ header('Location: '.$ORDER_CHECKOUT);
 
 }
 ?>
+</CODE>
